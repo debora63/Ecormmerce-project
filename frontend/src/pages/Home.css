@@ -1,0 +1,96 @@
+/* General container styling */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-blink {
+  animation: blink 1.2s infinite;
+}
+
+.animate-rotate {
+  display: inline-block; /* Needed for rotation */
+  animation: rotate 2s linear infinite;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid for products */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Individual product card */
+  .product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Product name */
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Price styling */
+  .price {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Add to cart button */
+  .add-to-cart {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background: #00f57b;
+  }
+  
+  
